@@ -28,7 +28,7 @@ def delete():
 
     listLines = open("phonebook.dat", "r").readlines()
     i=0
-    while i &lt; len(listLines):
+    while i < len(listLines):
         if listLines[i].lower().find(name.lower()) != -1:
             splitedList = listLines[i].split("|")
             print splitedList[0], (splitedList[-1])[:-1]

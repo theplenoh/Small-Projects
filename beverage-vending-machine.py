@@ -1,18 +1,16 @@
-import const
-
-const.PRICE_COKE = 1100
-const.PRICE_SPRITE = 900
-const.PRICE_VEGEMIL = 1000
-const.PRICE_LETSBE = 800
+PRICE_COKE = 1100
+PRICE_SPRITE = 900
+PRICE_VEGEMIL = 1000
+PRICE_LETSBE = 800
 money = 0
 
 def show_menu():
     menu = ""
     menu+="PRICES "+("="*10)+"\n"
-    menu+="1. coke: "+str(const.PRICE_COKE)+"\n"
-    menu+="2. sprite: "+str(const.PRICE_SPRITE)+"\n"
-    menu+="3. vegemil: "+str(const.PRICE_VEGEMIL)+"\n"
-    menu+="4. letsbe: "+str(const.PRICE_LETSBE)+"\n"
+    menu+="1. coke: "+str(PRICE_COKE)+"\n"
+    menu+="2. sprite: "+str(PRICE_SPRITE)+"\n"
+    menu+="3. vegemil: "+str(PRICE_VEGEMIL)+"\n"
+    menu+="4. letsbe: "+str(PRICE_LETSBE)+"\n"
     menu+="5. put in money"+"\n"
     menu+="6. return changes"+"\n"
     menu+="7. display this menu"
@@ -24,29 +22,29 @@ def select_submit():
 
     if value == 1:
         print "1. coke selected"
-        if (money >= const.PRICE_COKE):
-            money-=const.PRICE_COKE
+        if (money >= PRICE_COKE):
+            money-=PRICE_COKE
             print "Here's a coke"
         else:
             print "Not enough money"
     elif value == 2:
         print "2. sprite selected"
-        if (money >= const.PRICE_SPRITE):
-            money-=const.PRICE_SPRITE
+        if (money >= PRICE_SPRITE):
+            money-=PRICE_SPRITE
             print "Here's a sprite"
         else:
             print "Not enough money"
     elif value == 3:
         print "3. vegemil selected"
-        if (money >= const.PRICE_VEGEMIL):
-            money-=const.PRICE_VEGEMIL
+        if (money >= PRICE_VEGEMIL):
+            money-=PRICE_VEGEMIL
             print "Here's a vegemil"
         else:
             print "Not enough money"
     elif value == 4:
         print "4. letsbe selected"
-        if (money >= const.PRICE_LETSBE):
-            money-=const.PRICE_LETSBE
+        if (money >= PRICE_LETSBE):
+            money-=PRICE_LETSBE
             print "Here's a letsbe"
         else:
             print "Not enough money"

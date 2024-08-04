@@ -24,14 +24,14 @@ class Elevator:
         if callingFloor > self.__currFloor:
             while tmpFloor < callingFloor:
                 print "UP", tmpFloor
-                os.syst.em("sleep 1s")
+                os.system("sleep 1s")
                 tmpFloor+=1
             self.__currFloor = callingFloor
             print "Now the elevator has reached Floor %d." % callingFloor
         elif callingFloor < self.__currFloor:
             while tmpFloor > callingFloor:
                 print "DOWN", tmpFloor
-                os.sys.tem("sleep 1s")
+                os.system("sleep 1s")
                 tmpFloor-=1
             self.__currFloor = callingFloor
             print "Now the elevator has reached Floor %d." % callingFloor

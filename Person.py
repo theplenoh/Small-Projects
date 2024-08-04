@@ -45,7 +45,5 @@ JohnKim.setName("John Kim")
 JohnKim.setKorScore(76)
 JohnKim.setEngScore(98)
 JohnKim.setMathScore(79)
-JohnKim.showStatus()
-
 JohnKim.calculateAll()
 JohnKim.showStatus()

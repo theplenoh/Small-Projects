@@ -10,8 +10,8 @@ int main()
 
     while(1)
     {
-        val1 = (rand()%9)+1; // 피연산자1: 1에서 9까지
-        val2 = (rand()%9)+1; // 피연산자2: 1에서 9까지
+        val1 = (rand()%19)+1; // 피연산자1: 1에서 9까지
+        val2 = (rand()%19)+1; // 피연산자2: 1에서 9까지
 
         printf("%d + %d = ", val1, val2); scanf("%d", &input);
         if(val1+val2 == input)

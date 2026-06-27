@@ -11,10 +11,10 @@ monthNames = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'A
 currYear = 2026
 
 monthInfo = []
-for i, name in enumerate(monthNames, start=1):
+for i in range(1, 13):
     monthInfo.append({
         'ordinal': i, 
-        'name': name, 
+        'name': monthNames[i - 1], 
         'lastDay': getLastDay(currYear, i)
     })
 

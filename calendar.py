@@ -25,3 +25,7 @@ def getLastDay(year, month):
         return 30
     elif month == 12:
         return 31
+
+#currYear = 2024
+
+monthInfo = []

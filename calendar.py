@@ -1,3 +1,5 @@
+import datetime
+
 def getLastDay(year, month):
     lastDays = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
@@ -9,6 +11,7 @@ def getLastDay(year, month):
 monthNames = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')
 
 currYear = 2026
+currMonth = 4
 
 monthInfo = []
 for i in range(1, 13):
@@ -19,3 +22,7 @@ for i in range(1, 13):
     })
 
 print(monthInfo)
+
+initIdx = datetime.date(currYear, currMonth, 1).weekday() + 1
+
+print(initIdx)

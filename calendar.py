@@ -6,6 +6,8 @@ def getLastDay(year, month):
 
     return lastDays[month]
 
+monthNames = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')
+
 #currYear = 2024
 
 monthInfo = []

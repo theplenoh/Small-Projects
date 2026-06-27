@@ -8,7 +8,7 @@ def getLastDay(year, month):
 
 monthNames = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')
 
-currYear = 2024
+currYear = 2026
 
 monthInfo = []
 for i, name in enumerate(monthNames, start=1):
@@ -17,3 +17,5 @@ for i, name in enumerate(monthNames, start=1):
         'name': name, 
         'lastDay': getLastDay(currYear, i)
     })
+
+print(monthInfo)

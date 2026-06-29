@@ -22,3 +22,10 @@ for i in range(1, 13):
     })
 
 initIdx = datetime.date(currYear, currMonth, 1).weekday() + 1
+
+print("%d년" % currYear)
+for n in range(1, 13):
+    print("[%3d월]" % n)
+    for i in range(1, monthInfo[n-1]['lastDay']+1):
+        print("%4d" % i, end="")
+    print("")

@@ -21,8 +21,4 @@ for i in range(1, 13):
         'lastDay': getLastDay(currYear, i)
     })
 
-print(monthInfo)
-
 initIdx = datetime.date(currYear, currMonth, 1).weekday() + 1
-
-print(initIdx)
